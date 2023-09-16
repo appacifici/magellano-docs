@@ -1,0 +1,62 @@
+:arrow_left: [Index](index.md)
+
+# Banner HB - NoHB 
+
+- Se il sito si apre in nonHB e poi lo integro in BH
+- NonHB 
+    - ha solo AdSense
+-HB 
+    ha google AD Manager
+- Installare estensione
+    - Prebid
+    - Headerbid expert
+- Posizione
+    -Top 
+    -Middle
+        - mapping anche MP_ARTICLE_L
+        - aggiungere dimension separate da virgola
+    -Bottom 
+    -Sidebar 
+    -StikyAMP   
+
+
+- scripts/clear/magellano_hb_min.js ( centralizzato )
+    - aggiungere nel primo swithc:
+        - teads_placement_id
+        - teads_page_id
+        - seedtag_placement
+    - Secondo switch
+        - Copiare da magellano_nobh_min.js
+        - Incollare su magellano_hb_min.js
+        - Fine
+- Aspetto - Editor tema
+    - Header.php
+        - scrpt inizializzazione google tag dopo <?php wp_head(); ?>
+	    - <script>var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script> 
+- WP QUADS PRO
+    - Copia il contenuto es TOP da lineadiretta
+    - Devi modificare il contenuto interno al div 
+    - Poi midificare versione AMP
+    - AppNexsus è relativo adAsta
+    - Criteo c'è sempre
+- WP Aspetto
+    - WIDGET - Sidebar
+        - Trovo 2 HTML personalizzati ( se non so che fare vedo linea diretta )
+        - Modificare il placement-id in base a quelli attivi
+        - GLi id non devono essere uguali ma sequenziali
+        - NON HO AD ASTA TOGLIERE
+- AMP 
+    - Setup - Settings  - ADVANCED
+        - Enter HTML Body
+            - Copiare da lineadiretta contenuto <amp-sticky-ad-layout>
+- Salvare js 
+    - Copiare
+    - Incollare su Javascript Obfuscator
+        - FIle ricavato incollare su 
+            - script magellano_hb_min.js (no /Clear) 
+- Aspetto
+    - Editor del tema
+        - Footer 
+            - cambiare puntamento noHb a hb.js
+- Cancellare cache
+- Controllare funzionamento con ext Chrome Predid
