@@ -5,23 +5,25 @@
 - Se il sito si apre in nonHB e poi lo integro in BH
 - NonHB 
     - ha solo AdSense
--HB 
-    ha google AD Manager
+- HB 
+    - ha google AD Manager
 - Installare estensione
     - Prebid
     - Headerbid expert
-- Posizione
-    -Top 
-    -Middle
+
+# Posizionamenti
+    - Top 
+    - Middle
         - mapping anche MP_ARTICLE_L
         - aggiungere dimension separate da virgola
-    -Bottom 
-    -Sidebar 
-    -StikyAMP   
+    - Bottom 
+    - Sidebar 
+    - StikyAMP   
 
+# Procedura
 
-- scripts/clear/magellano_hb_min.js ( centralizzato )
-    - aggiungere nel primo swithc:
+- Modificare: scripts/clear/magellano_hb_min.js ( centralizzato )
+    - aggiungere nel primo switch:
         - teads_placement_id
         - teads_page_id
         - seedtag_placement
@@ -29,22 +31,28 @@
         - Copiare da magellano_nobh_min.js
         - Incollare su magellano_hb_min.js
         - Fine
+
 - Aspetto - Editor tema
     - Header.php
-        - scrpt inizializzazione google tag dopo <?php wp_head(); ?>
-	    - <script>var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script> 
+        - scrpt inizializzazione google tag dopo <?php wp_head(); ?>        
+	    ```javascript
+	    <script>var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script>
+	    ``` 
+
 - WP QUADS PRO
     - Copia il contenuto es TOP da lineadiretta
     - Devi modificare il contenuto interno al div 
     - Poi midificare versione AMP
     - AppNexsus è relativo adAsta
     - Criteo c'è sempre
+
 - WP Aspetto
     - WIDGET - Sidebar
         - Trovo 2 HTML personalizzati ( se non so che fare vedo linea diretta )
         - Modificare il placement-id in base a quelli attivi
         - GLi id non devono essere uguali ma sequenziali
         - NON HO AD ASTA TOGLIERE
+        
 - AMP 
     - Setup - Settings  - ADVANCED
         - Enter HTML Body
