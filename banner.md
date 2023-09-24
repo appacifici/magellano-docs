@@ -37,7 +37,10 @@
         - Fine
 - Committare e fare push su server Contabo
 - Verificare da browser che venga caricata correttamente questa url:
-    - https://unifiedads.magellanotech.it/ads/configuration?mapping=rsnews
+    - ES: solomotori
+        - https://www.solomotori.it/ads.txt
+        - deve fare redirect su:
+        - https://unifiedads.magellanotech.it/ads/configuration?mapping=solomotori
 
 - Aspetto - Editor tema
     - Header.php
