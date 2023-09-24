@@ -8,6 +8,8 @@ Ogni nuova informazione o funzionalità verra trovata all'interno di questa docu
 -   git clone git@github.com:appacifici/magellano-scripts.git
 -   git branch ( verifica branch corrente )
 -   git checkout -b nome-branch
+    - se esiste task su trello creare branch con il nome dell url + azione specifica nel case dei banner
+        ES: 8IMdOx23/36-adv-hb-siti-ippadisti
 -   git status 
 -   git add ( file da aggiungere )
 -   git commit -m 'descrizionde del commit' -a

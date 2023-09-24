@@ -1,5 +1,8 @@
 :arrow_left: [Index](index.md)
 
+- Documento accessi
+    - https://docs.google.com/spreadsheets/d/1qSJYJhltG38TM3WdLlQwlhOTPjgdwzNXsBK6RQ-jcec/edit#gid=1131407773
+
 # Banner HB - NoHB 
 
 - Se il sito si apre in nonHB e poi lo integro in BH
@@ -21,7 +24,8 @@
     - StikyAMP   
 
 # Procedura
-
+- Creare una branch con la url del task assegnato
+    - Vedi guida git
 - Modificare: scripts/clear/magellano_hb_min.js ( centralizzato )
     - aggiungere nel primo switch:
         - teads_placement_id
@@ -31,6 +35,9 @@
         - Copiare da magellano_nobh_min.js
         - Incollare su magellano_hb_min.js
         - Fine
+- Committare e fare push su server Contabo
+- Verificare da browser che venga caricata correttamente questa url:
+    - https://unifiedads.magellanotech.it/ads/configuration?mapping=rsnews
 
 - Aspetto - Editor tema
     - Header.php
